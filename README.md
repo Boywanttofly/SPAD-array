@@ -1,2 +1,2 @@
 # SPAD-array
-The experimental data and Matlab code of the validation of the output PDF of SPAD array 
+The experimental data and Matlab code for validation the model of the output PDF of SPAD array 
