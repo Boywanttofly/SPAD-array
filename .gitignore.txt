@@ -1,0 +1,17 @@
+# MATLAB 常见忽略项
+*.asv
+*.m~
+*.mlappinstall
+*.mltbx
+*.fig
+*.slx
+autosave/
+
+# 数据或编译输出文件
+*.mat
+*.mex*
+*.p
+
+# 系统文件
+.DS_Store
+Thumbs.db
