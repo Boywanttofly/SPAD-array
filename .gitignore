@@ -3,12 +3,10 @@
 *.m~
 *.mlappinstall
 *.mltbx
-*.fig
 *.slx
 autosave/
 
 # 数据或编译输出文件
-*.mat
 *.mex*
 *.p
 

@@ -33,16 +33,6 @@ for i=1:size(ch1,1)
     end
 end
 
-% 1位置数据提取
-% cnt = 0;
-% for ook_i = 1 : size(ook_data,2)
-%     if(ook_data(ook_i) == 1)
-%         cnt = cnt + 1;
-%         ch1_1((cnt-1) * k_ook + 1 : cnt * k_ook) = ch1_filter((ook_i-1) * k_ook + 1 : ook_i * k_ook);
-%     end
-% end
-% xlabel('t/s');
-% ylabel('Voltage (V)');
 % 噪声参数获取
 [BinHeight,BinCenter] = createFit_for_exp_data_DC(ch1_filter);
 n_loc_max = find(BinHeight == max(BinHeight));
@@ -88,9 +78,6 @@ for en = 1:6%exp_number
 % end
 
 %积分运算
-%20250525各组数据估计光强
-%统计串扰概率的数据总计数率为2.1e6，信号（分布反推计数）：[18.91	36.05	81.49	187.47	588.52	1224.25]e6
-%脉冲堆叠区计数：20.26	38.54	86.90	199.30	617.11	1260.41
 %直接卷积法
 Photon_count_arrive=lambda_est(en)/N_array;%光子数需通过模型均值-入射光强估计法获取/(1/(1-p_crosstalk))
 Photon_count_arrive=PC_arr(en)*1e6/N_array;
